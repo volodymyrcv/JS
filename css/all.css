@@ -2,5 +2,5 @@ body {background-image:url('../img/js.svg'); background-repeat:no-repeat; backgr
 header nav {display:flex; justify-content:space-around;}
 a:visited, a:link {color:purple; font-size:20pt; text-shadow:3px 1px 4px red; text-decoration:none; transition:color 1s; -moz-transition:color 1s; -o-transition:color 1s; -webit-transition:color 1s;}
 a:hover{color:white;}
-footer {background-color:white; border:black solid thin; border-radius:8px/10px; -webkit-border-radius:8px/10px; -moz-border-radius:8px/4px; box-shadow:0 0 17px green; line-height:17pt; letter-spacing:3pt; opacity:0.8; -moz-opacity:0.8; width:93%;}
+footer {background-color:white; border:black solid thin; border-radius:8px/10px; -moz-border-radius:8px/4px; box-shadow:0 0 17px green; -webkit-border-radius:8px/10px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; line-height:17pt; letter-spacing:3pt; opacity:0.8; -moz-opacity:0.8; width:94%;}
 footer li:last-child {color:red; font-weight:bold; list-style-type:circle;}
