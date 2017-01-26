@@ -1,4 +1,6 @@
-body {background-image:url('../img/js.svg'); background-repeat:no-repeat; background-size:50%; font-size:14pt; font-family:"Times New Roman"; width:50%;}
+body {background-image:url('../img/js.svg'); background-repeat:no-repeat; background-size:50%; font-size:14pt; font-family:"Times New Roman"; width:530px;}
 header nav {display:flex; justify-content:space-around;}
 a:visited, a:link {color:purple; font-size:20pt; text-shadow:3px 1px 4px red; text-decoration:none; transition:color 1s; -moz-transition:color 1s; -o-transition:color 1s; -webit-transition:color 1s;}
 a:hover{color:white;}
+footer {border:black thin; background-color:white; box-shadow:0px 0px 17px green; line-height:17pt; letter-spacing:3pt; width:93%;}
+footer li:last-child {color:red; font-weight:bold;}
