@@ -39,13 +39,13 @@ function properties (fibNumbers, answer){
     answer += '</li><li><em>Парні:</em>';
     while(i<fibNumbers.length)
     {
-        answer += fibNumbers[i]+ ';'
+        answer += fibNumbers[i]+ '; '
         i+= 3;
     }
     i = 3;
     answer +='</li><li><em>Діляться на 3:</em>'
     do{
-        answer += fibNumbers[i]+';'
+        answer += fibNumbers[i]+'; '
         i += 4;
     }
     while(i<fibNumbers.length)
@@ -55,7 +55,7 @@ function properties (fibNumbers, answer){
         answer +='</li><li><em>Закінчується на 0:</em>'
         while(i<=fibNumbers.length)
         {
-            answer += fibNumbers[i]+';'
+            answer += fibNumbers[i]+'; '
             i+=15;
         }
     }
