@@ -24,8 +24,6 @@ function decreaseRecurent (n, fibNumbers){
     //Спадання: Фн+2 - Фн+1
     if (fibNumbers.length < n)
     {
-        
-        //fibNumbers[fibNumbers.length-1] <0 ? fibNumbers.push(fibNumbers[fibNumbers.length-2]-(-fibNumbers[fibNumbers.length-1])) : fibNumbers.push(fibNumbers[fibNumbers.length-2]-fibNumbers[fibNumbers.length-1]);
         fibNumbers.push(fibNumbers[fibNumbers.length-2]-fibNumbers[fibNumbers.length-1])
         decreaseRecurent(n, fibNumbers);
     }
