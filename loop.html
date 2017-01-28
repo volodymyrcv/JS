@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>.done {border:1px solid red}</style>
+</head>
+<body>
+    <h1>Accessing form controls with JavaScript</h1>
+    <form>
+      <label for="inpt">Input string here: </label>
+      <input id="inpt" type="text">
+      <input id="btn" type="submit">
+    </form>
+    <p>Result: <span id="result"></span></p>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function(){
+    $('#btn').click(function(e){
+        e.preventDefault();
+        $('#result').html($('#inpt').val().split('').reverse().join(''));
+        $('p').addClass('done');
+    });
+    });
+        //ggl.addEventListener('click', function(e){alert('Зараз ви не перейдете на сайт Ґуґла');e.preventDefault();});
+        /*btn.addEventListener('click', function(e) {
+            var str = inpt.value;  // read value from input with id="str"
+            var res = str.split(' ').reverse().join(' '); // reverse symbols in a string
+            result.innerHTML = res; // write result to span with is="result"
+              e.preventDefault(); // prevent form submission
+        });
+        $(function() {
+            $('#result').html('Hello jQuery');
+        });*/
+    </script>
+</body>
+</html>
