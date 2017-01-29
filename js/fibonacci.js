@@ -11,6 +11,14 @@ function writeOnPage(){
     if(frm.growthDecrease.value == 'Growth')
         answer = properties(fibNumbers, answer);
     answer += '</li></ul><hr><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvolodymyrcv.github.io%2FJS%2Ffibonacci.html">Валідатор</a></footer>';
+    var ftr = document.getElementsByTagName('footer')[0];
+    if (ftr === undefined)
+        document.body.insertAdjacentHTML('beforeend', answer);
+    else
+    {
+        document.body.removeChild(ftr);
+        document.body.insertAdjacentHTML('beforeend', answer);
+    }
 }
 function growthLoop (n, fibNumbers){
     //Зростання: Фн-1 + Фн-2
