@@ -4,3 +4,4 @@ a:visited, a:link {color:purple; font-size:20pt; text-shadow:3px 1px 4px red; te
 a:hover{color:white;}
 footer {background-color:white; border:black solid thin; border-radius:8px/10px; -moz-border-radius:8px/4px; box-shadow:0 0 17px green; -webkit-border-radius:8px/10px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; line-height:17pt; letter-spacing:3pt; opacity:0.8; -moz-opacity:0.8; width:94%;}
 footer li:last-child {color:red; font-weight:bold; list-style-type:circle;}
+footer a:visited, footer a:link {color:black; text-shadow:none; transition:none; -moz-transition:none; -o-transition:none; -webkit-transition:none;}
