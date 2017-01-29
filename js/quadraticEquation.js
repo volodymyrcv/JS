@@ -10,7 +10,7 @@ function writeOnPage()
     else
     {
         document.body.removeChild(ftr);
-        document.body.insertAdjacentHTML('beforeend', calculate(a,b,c))
+        document.body.insertAdjacentHTML('beforeend', calculate(a,b,c));
     }
 }
 function calculate(a, b, c)
@@ -26,15 +26,15 @@ function calculate(a, b, c)
                 var fullQE = '<h4>Повне квадратне рівняння</h4>';
                 var d = Math.pow(b, 2)-4*a*c;
                 if (d > 0)
-                    answer += fullQE+abcValues+'<li><em>Дискримінант якого='+d+'</em></li><li>x<sub>1</sub>='+((-b+Math.sqrt(d))/(2*a))+' | x<sub>2</sub>='+((-b-Math.sqrt(d))/(2*a)) + '</li></ul></footer>';
+                    answer += fullQE+abcValues+'<li><em>Дискримінант якого='+d+'</em></li><li>x<sub>1</sub>='+((-b+Math.sqrt(d))/(2*a))+' | x<sub>2</sub>='+((-b-Math.sqrt(d))/(2*a)) + '</li></ul>';
                 else if (d === 0)    
-                    answer += fullQE+abcValues+'<li><em>Дискримінант якого=0</em></li><li>x='+(-b/(2*a)) + '</li></ul></footer>';
+                    answer += fullQE+abcValues+'<li><em>Дискримінант якого=0</em></li><li>x='+(-b/(2*a)) + '</li></ul>';
                 else
-                    answer += fullQE+abcValues+'<li><em>Дискримінант якого='+d+'</em></li><li>Рівняння не має дійсних коренів</li></ul></footer>';
+                    answer += fullQE+abcValues+'<li><em>Дискримінант якого='+d+'</em></li><li>Рівняння не має дійсних коренів</li></ul>';
             }
             else
             {
-                answer += '<h4>Неповне квадратне рівняння</h4>'+abcValues+'</li><li>x<sub>1</sub>=0 | x<sub>2</sub>='+(-b/a)+'</li></ul></footer>';
+                answer += '<h4>Неповне квадратне рівняння</h4>'+abcValues+'</li><li>x<sub>1</sub>=0 | x<sub>2</sub>='+(-b/a)+'</li></ul>';
             }
         }
         else
@@ -45,16 +45,16 @@ function calculate(a, b, c)
                 var ca = -c/a;
                 if (ca < 0)
                 {
-                    answer += '<li>Рівняння не має жодного дійсного розв\'язку</li></ul></footer>';
+                    answer += '<li>Рівняння не має жодного дійсного розв\'язку</li></ul>';
                 }
                 else
                 {
-                   answer +='<h4>Неповне квадратне рівняння</h4>'+abcValues+'<li>x<sub>1</sub>='+Math.sqrt(ca)+' | x<sub>2</sub>='+-Math.sqrt(ca)+'</li></ul></footer>';
+                   answer +='<h4>Неповне квадратне рівняння</h4>'+abcValues+'<li>x<sub>1</sub>='+Math.sqrt(ca)+' | x<sub>2</sub>='+-Math.sqrt(ca)+'</li></ul>';
                 }
             }
             else
             {
-                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x=0</li></ul></footer>';
+                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x=0</li></ul>';
             }
         }
     }
@@ -64,17 +64,18 @@ function calculate(a, b, c)
         {
             if (c !== 0)
             {
-                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x='+(-c/b)+'</li></ul></footer>';
+                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x='+(-c/b)+'</li></ul>';
             }
             else
             {
-                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x = 0</li></ul></footer>';
+                answer += '<h4>Просте рівняння</h4>'+abcValues+'<li>x = 0</li></ul>';
             }
         }
         else
         {
-            answer += abcValues+'<li><em>не є рівнням!</em></li></ul></footer>';
+            answer += abcValues+'<li><em>не є рівнням!</em></li></ul>';
         }
     }
+    answer += '<hr><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvolodymyrcv.github.io%2FJS%2Fquadequation.html">Валідатор</a></footer>';
     return answer;
 }

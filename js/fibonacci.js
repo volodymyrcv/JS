@@ -10,7 +10,7 @@ function writeOnPage(){
         answer +=fibNumbers[i] + '; ';
     if(frm.growthDecrease.value == 'Growth')
         answer = properties(fibNumbers, answer);
-    answer += '</li></ul></footer>';
+    answer += '</li></ul><hr><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvolodymyrcv.github.io%2FJS%2Ffibonacci.html">Валідатор</a></footer>';
 }
 function growthLoop (n, fibNumbers){
     //Зростання: Фн-1 + Фн-2
