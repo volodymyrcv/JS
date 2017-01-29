@@ -6,12 +6,12 @@ function writeOnPage(){
     else
         decreaseRecurent(frm.n.value, fibNumbers);
     var ftr = document.getElementsByTagName('footer')[0];
-    var answer = "<h2>Числа Фібоначі і їх властивості</h2><p><ul><li>";
+    var answer = "<footer><h2>Числа Фібоначі і їх властивості</h2><p><ul><li>";
     for(var i=0; i<fibNumbers.length;i++)
         answer +=fibNumbers[i] + '; ';
     if(frm.growthDecrease.value == 'Growth')
         answer = properties(fibNumbers, answer);
-    ftr.innerHTML = answer + '</li></ul>';
+    ftr.innerHTML = answer + '</li></ul></footer>';
 }
 function growthLoop (n, fibNumbers){
     //Зростання: Фн-1 + Фн-2
